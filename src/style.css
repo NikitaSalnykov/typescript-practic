@@ -1,0 +1,27 @@
+.popup {
+  background-color: rgba(0, 0, 0, 0.705);
+  padding: 5px;
+    border: 1px solid #ccc;
+      border-radius: 25px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 8vw;
+      padding: 17px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: whitesmoke;
+}
+
+.active {
+  opacity: 1;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}

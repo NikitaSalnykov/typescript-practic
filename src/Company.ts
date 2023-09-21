@@ -13,7 +13,16 @@ export class Company {
     this.catchPhrase = faker.company.catchPhrase();
     this.location = {
       lat: faker.location.latitude(),
-      lng: faker.location.latitude()
+      lng: faker.location.longitude()
     }
+  }
+
+    marketContent(): string {
+    return `
+    <div>
+    <h2>Company: ${this.companyName}</h2>
+    <p>Catch Phrase: ${this.catchPhrase}</p>
+    </div>
+    `
   }
 }
