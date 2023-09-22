@@ -1,21 +1,23 @@
 .popup {
-  background-color: rgba(0, 0, 0, 0.705);
+background-color: rgb(255 255 255 / 90%);
   padding: 5px;
-    border: 1px solid #ccc;
-      border-radius: 25px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      height: 100%;
-      opacity: 0;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      height: 8vw;
-      padding: 17px;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      color: whitesmoke;
-}
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  /* transform: translate(-50%, -50%); */
+  height: 100px;
+  width: 259px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #3c3030;
+  transition: all 0.3s ease-in-out;
+    }
+
 
 .active {
   opacity: 1;
@@ -24,4 +26,32 @@
 h1, h2, h3, p {
   margin: 0;
   padding: 0;
+}
+
+p{
+      font-size: larger;
+      margin-top: 2px;
+}
+
+body{
+      display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        align-items: center;
+}
+
+canvas {
+      border-radius: 20px;
+}
+
+ul {
+  display: none;
+}
+
+.map:active {
+cursor: move;
+}
+
+body{
+  font-family: monospace;
 }
